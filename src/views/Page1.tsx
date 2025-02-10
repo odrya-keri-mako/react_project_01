@@ -1,6 +1,7 @@
 import React from "react";
 
 const Page1: React.FC = () => {
+	const currentPage: string = 'page1';
   return (
     <div className="container">
 	    <div className="row mt-5">
@@ -8,7 +9,7 @@ const Page1: React.FC = () => {
           welcome!
 		    </h1>
 		    <h4 className="text-center text-capitalize display-4">
-			    page1
+					{currentPage}
 		    </h4>
 	    </div>
     </div>
