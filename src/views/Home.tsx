@@ -1,7 +1,9 @@
 import React from "react";
+import { HomeController } from "../controllers/HomeController";
 
 const Home: React.FC = () => {
-	const currentPage: string = 'home';
+	const controller = new HomeController();
+	const currentPage: string = controller.getCurrentPage();
   return (
     <div className="container">
 	    <div className="row mt-5">

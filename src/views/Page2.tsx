@@ -1,7 +1,9 @@
 import React from "react";
+import { Page2Controller } from "../controllers/Page2Controller";
 
 const Page2: React.FC = () => {
-	const currentPage: string = 'page2';
+	const controller = new Page2Controller();
+	const currentPage: string = controller.getCurrentPage();
   return (
     <div className="container">
 	    <div className="row mt-5">
